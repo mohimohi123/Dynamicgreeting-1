@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Dynamic Greeting</title>
+</head>
+
+<body>
+
+<h2 id="msg"></h2>
+
+<script>
+var time = new Date().getHours();
+var message = "";
+
+if(time < 12)
+{
+    message = "Good Morning";
+}
+else if(time < 17)
+{
+    message = "Good Afternoon";
+}
+else
+{
+    message = "Good Evening";
+}
+
+document.getElementById("msg").innerHTML = message;
+</script>
+
+</body>
+</html>
